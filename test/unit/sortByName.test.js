@@ -7,7 +7,7 @@ describe("Books names test suit", () => {
         "Гарри Поттер",
         "Властелин Колец",
         "Волшебник изумрудного города",
-      ])
+      ]),
     ).toEqual([
       "Властелин Колец",
       "Волшебник изумрудного города",
@@ -15,18 +15,13 @@ describe("Books names test suit", () => {
     ]);
   });
 
-  it ("Вooks have the same title, the order of the list is preserved", ()=> {
-     expect (
+  it("Вooks have the same title, the order of the list is preserved", () => {
+    expect(
       sorting.sortByName([
         "Гарри Поттер",
         "Властелин Колец",
         "Властелин Колец",
-      ])
-    ).toEqual([
-       "Властелин Колец",
-       "Властелин Колец", 
-       "Гарри Поттер",
-      ]);
-});
-
+      ]),
+    ).toEqual(["Властелин Колец", "Властелин Колец", "Гарри Поттер"]);
+  });
 });
